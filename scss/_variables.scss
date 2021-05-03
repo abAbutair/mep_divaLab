@@ -1,0 +1,85 @@
+// colors
+$red: #fa0203;
+$brightGray: #e5ebeb;
+$darkGray: #333;
+$lightGray: #f0eeee;
+$alph: rgba(32, 30, 30, 0.4);
+
+$fontColor: #333;
+$normalSize: 17px;
+$subTitleSize: 18px;
+$smallSize: 12px;
+$navSize: 16px;
+
+$secPadding: 50px 0 55px 0;
+
+//----- translate -----
+$isRtl: ltr;
+$left: left;
+$right: right;
+$direction: ltr;
+$minus: 1;
+$bodyFont: RobotoSlab;
+$headingFont: futura-bold;
+$headingFontLight: futura-med;
+$langFont: DroidKufi;
+
+$letterSpacing:5px;
+
+$double-right: "\f101";
+$double-left: "\f100";
+$chevron-left: "\f053";
+$chevron-right: "\f054";
+
+$rotate90: 90deg;
+
+$flex-direction: row;
+
+//--send-button---footer
+$text-orientation: upright;
+$letter-spacing: 8px;
+$rotate: 0;
+
+@if $isRtl == rtl {
+  $left: right;
+  $right: left;
+  $direction: rtl;
+  $minus: -1;
+  $bodyFont: DroidKufi;
+  $headingFont: DroidKufi;
+  $headingFontLight: DroidKufi;
+  $langFont: RobotoSlab;
+  $letterSpacing:0px;
+  $navSize: 18px;
+  $double-right: "\f100";
+  $double-left: "\f101";
+  $chevron-left: "\f054";
+  $chevron-right: "\f053";
+  $rotate90: -90deg;
+  $flex-direction: row-reverse;
+  //--send-button---footer
+  $text-orientation: initial;
+  $letter-spacing: 0;
+  $rotate: 180deg;
+
+} @else {
+  $left: left;
+  $right: right;
+  $direction: ltr;
+  $minus: 1;
+  $bodyFont: RobotoSlab;
+  $headingFont: futura-bold;
+  $headingFontLight: futura-med;
+  $langFont: DroidKufi;
+  $letterSpacing:5px;
+  $double-right: "\f101";
+  $double-left: "\f100";
+  $chevron-left: "\f053";
+  $chevron-right: "\f054";
+  $rotate90: 90deg;
+  $flex-direction: row;
+  //--send-button---footer
+  $text-orientation: upright;
+  $letter-spacing: 8px;
+  $rotate: 0;
+}

@@ -1,0 +1,81 @@
+.underline {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.direction {
+    direction: $direction;
+}
+.half {
+    width: 50%;
+    &:last-child {
+        padding-#{$left}: 15px;
+    }
+}
+.clr_main {
+    color: $red;
+}
+.bg_main {
+    background-color: $red;
+}
+.clr_nd {
+    color: $brightGray;
+}
+.bg_nd {
+    background-color: $brightGray;
+}
+.bg-dark{
+    background-color: $darkGray;
+}
+
+.ttle-style{
+    font-family: 'semi-jose';
+    font-size: 36px;
+    letter-spacing: $letterSpacing;
+    text-transform: uppercase;
+}
+.p-style{
+    font-family: 'light-jose';
+    font-size: 16px;
+}
+.rob-style{
+    font-family: 'regu-robo';
+}
+
+%covered_bg {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+%h_center {
+    position: absolute;
+    left: 50%;
+    @include translate (-50%, 0);
+}
+%v_center {
+    position: absolute;
+    top: 50%;
+    @include translate (0, -50%);
+}
+%center_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate (-50%, -50%);
+}
+%rotate45 {
+    @include rotate(45deg);
+}
+%flip45 {
+    @include rotate(-45deg);
+}
+
+
+
+
+
+
+
